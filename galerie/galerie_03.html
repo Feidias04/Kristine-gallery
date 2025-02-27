@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>galerie skleněných plastik</title>
+
+
+	<style type="text/css">
+			body{font:12px/1.5 Verdana, Arial, san-serrif;}
+			a:link, a:visited{text-decoration:none; color:#416CE5; border-bottom:1px solid #416CE5;}
+			h2{font-size:13px;}
+			.hidden{display:none;}
+		</style>
+		<link type="text/css" media="screen" rel="stylesheet" href="colorbox.css" />
+		<!--
+		This example has no IE-Only Stylesheet because the theme uses no transparent png files.
+		-->
+		
+		<script type="text/javascript" src="../colorbox/jquery.min.js"></script>
+		<script type="text/javascript" src="../colorbox/jquery.colorbox.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				//Examples of how to assign the ColorBox event to elements.
+			//href='../form_03.html'
+		
+		
+				//$("a[href='../form_03.html']").colorbox({
+        
+        //({ 
+				//var forma = getElementsByTagName("form"),
+				//var sirka = forma.width,
+				//window.alert("hi"),
+      // width:"679px", height:"780px",
+        //margin-left:"0px",
+        //iframe:true,
+ 	//slideshowAuto:false, 
+ 		//current : "",
+		//previous : "",
+     // slideshowStart: "",
+		//slideshowStop:""   
+        //});
+
+
+
+				
+				$("a[rel='jack']").colorbox({transition:"fade"});
+				$("a[rel='dogs']").colorbox({transition:"elastic"});
+				$("a[rel='river']").colorbox({transition:"none", width:"75%", height:"75%"});
+				$(".slideshow").colorbox({slideshow:true});
+				$("a.single").colorbox({}, function(){
+					alert('Howdy, this is an example callback.');
+				});
+				$("a[title='Homer Defined']").colorbox();
+				$(".flash").colorbox({href:"../content/flash.html"});
+				$("a[href='http://google.com']").colorbox({width:"80%", height:"80%", iframe:true});
+				
+				//Example of preserving a JavaScript event for inline calls.
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+					return false;
+				});
+				$("#inline").colorbox({width:"50%", inline:true, href:"#inline_example1", title:"hello"});
+			});
+
+
+			
+
+function test(){
+document.getElementById("audio").style.visibility = "hidden"
+}
+
+		</script>
+
+
+
+
+
+<script type="text/javascript" src="jquery-1.2.6.pack.js"></script>
+
+<script type="text/javascript" src="stepcarousel.js">
+
+/***********************************************
+* Step Carousel Viewer script- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* Visit http://www.dynamicDrive.com for hundreds of DHTML scripts
+* This notice must stay intact for legal use
+***********************************************/
+
+
+function hraj(){
+	var muzic_test = document.getElementById("audio")
+muzic_test.play()
+
+}
+
+const audioElement = document.getElementById(' myAudio ');  
+	  
+	  
+	audioElement.addEventListener('onload', () => {  
+		audioElement.play();  
+	});    
+	
+	stepcarousel.setup({
+		galleryid: 'mygallery', //id of carousel DIV
+		beltclass: 'belt', //class of inner "belt" DIV containing all the panel DIVs
+		panelclass: 'panel', //class of panel DIVs each holding content
+		autostep: {enable:true, moveby:1, pause:3000},
+		panelbehavior: {speed:500, wraparound:false, persist:true},
+		defaultbuttons: {enable: true, moveby: 1, leftnav: ['button_left.png', 2, -17], rightnav: ['button_right.png', -65, -17]},
+		statusvars: ['statusA', 'statusB', 'statusC'], //register 3 variables that contain current panel (start), current panel (last), and total panels
+		contenttype: ['inline'] //content setting ['inline'] or ['external', 'path_to_external_file']
+	})
+	function zavri()
+	{
+	window.close();	
+	}
+
+</script>
+
+<style type="text/css">
+
+.stepcarousel{
+position: relative; /*leave this value alone*/
+border: 3px double rgb(102,51,204);
+margin-top:0px;
+overflow: hidden;/*leave this value alone*/
+z-index:4;
+width: 900px; /*Width of Carousel Viewer itself*/
+height: 180px; /*Height should enough to fit largest content's height*/
+text-align:top;
+}
+
+.stepcarousel .belt{
+float: right;
+position: absolute; /*leave this value alone*/
+left: 0;
+top: 0;
+width: 2340px;
+
+}
+
+.stepcarousel .panel{
+
+float: left; /*leave this value alone*/
+overflow: hidden; /*clip content that go outside dimensions of holding panel DIV*/
+margin: 0px; /*margin around each panel*/
+width: 180px; /*Width of each panel holding each content. If removed, widths should be individually defined on each content DIV then. */
+}
+
+
+
+	.napisdole_1{position:relative;
+		margin-top:80px;
+	width:500px;
+	
+	}
+	.zavri{
+		vertical-align:middle;
+		font-size:16px;
+		cursor:pointer;
+		
+		}
+</style>
+	
+
+	
+	
+</head>
+
+<body onload="test_muzic(); hraj();">
+	<audio id="audio" controls autoplay>
+		<source id="muzic_01" src="../rose_for_web_02.mp3" type="audio/mp3">
+		Your browser does not support the audio element.
+	  </audio>
+
+<center><h3>Galerie obrazů od Kristýny Křepinské</h3></center>
+
+
+
+
+
+
+<center>
+<div id="mygallery" class="stepcarousel" >
+<div class="belt">
+
+
+
+<div class="panel">
+<a href="images/10m_azurove.jpg"  rel="ohoopee"  class='slideshow' title="Azurové."  ><img src="thumb/thumb_2/10m_azurove_thumb.jpg"  alt="azurové"  border="0" /></a>
+</div>
+
+<div class="panel">
+<a href="images/barevny_cas.jpg"  rel="ohoopee"  class='slideshow' title="Barevný čas." ><img src="thumb/thumb_2/barevny_cas_thumb.jpg" alt="barevný čas"  border="0"  /></a>
+</div>
+
+<div class="panel">
+<a href="images/bludiste.jpg"  rel="ohoopee"  class='slideshow' title="Bludiště." ><a href="images/detsky_sen.jpg"  rel="ohoopee"  class='slideshow' title="Dětský sen." ><img src="thumb/thumb_2/detsky_sen.png"  alt="dětský sen"  border="0" /></a><img src="thumb/thumb_2/bludiste_thumb.jpg"  alt="bludiště"  border="0" /></a>
+</div>
+
+
+
+<div class="panel">
+<a href="images/ester.jpg"  rel="ohoopee"  class='slideshow' title="Ester." ><img src="thumb/thumb_2/ester.jpg"  alt="ester"  border="0" /></a>
+</div>
+<div class="panel">
+<a href="images/hra_barev.jpg"  rel="ohoopee"  class='slideshow' title="Hra barev." ><img src="thumb/thumb_2/hra_barev_thumb.jpg"  alt="hra barev"  border="0" /></a>
+</div>
+<div class="panel">
+<a href="images/isis.jpg"  rel="ohoopee"  class='slideshow' title="Isis." ><img src="thumb/thumb_2/isis_thumb.jpg"  alt="isis"  border="0" /></a>
+</div>
+<div class="panel">
+<a href="images/jursky_park.jpg"  rel="ohoopee"  class='slideshow' title="Jurský park." ><img src="thumb/thumb_2/jursky_thumb.jpg"  alt="jurský pard"  border="0" /></a>
+</div>
+<div class="panel">
+<a href="images/barevna_rotace.jpg"  rel="ohoopee"  class='slideshow' title="Barevná rotace." ><img src="thumb/thumb_2/barevna_rotace_thumb.jpg"  alt="barevná rotace"  border="0" /></a>
+</div>
+<div class="panel">
+<a href="images/zlaty_sjezd.jpg"  rel="ohoopee"  class='slideshow' title="Zlatý sjezd." ><img src="thumb/thumb_2/zlaty_sjezd_thumb.jpg"  alt="zlatý sjezd"  border="0" /></a>
+</div>
+
+
+<div class="panel">
+<a href="images/labyrint_azur.jpg"  rel="ohoopee"  class='slideshow' title="Labyrint azur." ><img src="thumb/thumb_2/labyrint_azur_thumb.jpg"  alt="labyrint azur"  border="0" /></a>
+</div>
+
+
+<div class="panel">
+<a href="images/ledovy_vjejir.jpg"  rel="ohoopee"  class='slideshow' title="Ledový vjejíř." ><img src="thumb/thumb_2/ledovy_vjejir_thumb.jpg"  alt="ledový vjejíř"  border="0" /></a>
+</div>
+
+<div class="panel">
+<a href="images/leto.jpg"  rel="ohoopee"  class='slideshow' title="Léto." ><img src="thumb/thumb_2/leto_thumb.jpg"  alt="léto"  border="0" /></a>
+</div>
+
+
+</div>
+</div>
+<div class="napisdole_1">
+Na této stránce jsou některé vybrané obrazy, které namalovala Kristýna Křepinská v letech 2022 až 2025. 
+<div >
+<a href="#" onclick="zavri()">Zavřít toto okno</a>
+<br /><img class="zavri" src="close_2.gif" width="50" height="50" alt="zavři okno" onclick="zavri();hraj();" /></div>
+</div>
+
+</center>
+</body>
+</html>
