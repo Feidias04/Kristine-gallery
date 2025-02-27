@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>galerie skleněných plastik</title>
+
+
+	<style type="text/css">
+			body{font:12px/1.5 Verdana, Arial, san-serrif;}
+			a:link, a:visited{text-decoration:none; color:#416CE5; border-bottom:1px solid #416CE5;}
+			h2{font-size:13px;}
+			.hidden{display:none;}
+		</style>
+		<link type="text/css" media="screen" rel="stylesheet" href="colorbox.css" />
+		<!--
+		This example has no IE-Only Stylesheet because the theme uses no transparent png files.
+		-->
+		
+		<script type="text/javascript" src="../colorbox/jquery.min.js"></script>
+		<script type="text/javascript" src="../colorbox/jquery.colorbox.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				//Examples of how to assign the ColorBox event to elements.
+				
+				
+						 $("a[href='images/barevny_cas.jpg']").colorbox({ 
+        
+  width:this.width, 
+    transition : "elastic",
+		speed : 350,
+		//width : false,
+		//height : false,
+		initialWidth : "300",
+		initialHeight : "400",
+		maxWidth : false,
+		maxHeight : false,
+		resize : true,
+		inline : false,
+		iframe : false,
+		photo : true,
+		href : false,
+		title : false,
+		rel : false,
+		opacity : 0.7,
+		preloading : true,
+		current : "obrázek {current} z {total}",
+		previous : "previous",
+		next : "next",
+		close : "close",
+		open : false,
+		overlayClose : true,
+		slideshow:true,
+		slideshowAuto:true,
+		slideshowSpeed: 2500,
+		slideshowStart: "start slideshow",
+		slideshowStop: "stop slideshow"
+    });
+				
+
+				
+				$("a[rel='jack']").colorbox({transition:"fade"});
+				$("a[rel='dogs']").colorbox({transition:"elastic"});
+				$("a[rel='river']").colorbox({transition:"none", width:"75%", height:"75%"});
+				$(".slideshow").colorbox({slideshow:true});
+				$("a.single").colorbox({}, function(){
+					alert('Howdy, this is an example callback.');
+				});
+				$("a[title='Homer Defined']").colorbox();
+				$(".flash").colorbox({href:"../content/flash.html"});
+				$("a[href='http://google.com']").colorbox({width:"80%", height:"80%", iframe:true});
+				
+				//Example of preserving a JavaScript event for inline calls.
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+					return false;
+				});
+				$("#inline").colorbox({width:"50%", inline:true, href:"#inline_example1", title:"hello"});
+			});
+		</script>
+
+
+
+
+
+<script type="text/javascript" src="jquery-1.2.6.pack.js"></script>
+
+<script type="text/javascript" src="stepcarousel.js">
+
+/***********************************************
+* Step Carousel Viewer script- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* Visit http://www.dynamicDrive.com for hundreds of DHTML scripts
+* This notice must stay intact for legal use
+***********************************************/
+
+</script>
+
+<style type="text/css">
+
+.stepcarousel{
+position: relative; /*leave this value alone*/
+border: 1px solid blue
+margin-top:0px;
+overflow: scroll; /*leave this value alone*/
+z-index:4;
+width: 540px; /*Width of Carousel Viewer itself*/
+height: 180px; /*Height should enough to fit largest content's height*/
+text-align:top;
+}
+
+.stepcarousel .belt{
+float: right;
+position: absolute; /*leave this value alone*/
+left: 0;
+top: 0;
+width: 360px;
+
+}
+
+.stepcarousel .panel{
+
+float: left; /*leave this value alone*/
+overflow: hidden; /*clip content that go outside dimensions of holding panel DIV*/
+margin: 0px; /*margin around each panel*/
+width: 180px; /*Width of each panel holding each content. If removed, widths should be individually defined on each content DIV then. */
+}
+
+
+
+</style>
+	
+	
+	
+	
+</head>
+
+<body>
+<center><h3>Galerie skleněných plastik</h3></center>
+
+
+
+
+<script type="text/javascript">
+
+stepcarousel.setup({
+	galleryid: 'mygallery', //id of carousel DIV
+	beltclass: 'belt', //class of inner "belt" DIV containing all the panel DIVs
+	panelclass: 'panel', //class of panel DIVs each holding content
+	autostep: {enable:true, moveby:1, pause:3000},
+	panelbehavior: {speed:500, wraparound:false, persist:true},
+	defaultbuttons: {enable: true, moveby: 1, leftnav: ['317e0s5.gif', 2, 1], rightnav: ['33o7di8.gif', -26, 1]},
+	statusvars: ['statusA', 'statusB', 'statusC'], //register 3 variables that contain current panel (start), current panel (last), and total panels
+	contenttype: ['inline'] //content setting ['inline'] or ['external', 'path_to_external_file']
+})
+
+</script>
+<center>
+<div id="mygallery" class="stepcarousel" >
+<div class="belt">
+
+
+
+<div class="panel">
+<a href="images/10m_azurove.jpg"  rel="ohoopee"  class='slideshow' title="Azurové."  ><img src="thumb/thumb_2/10m_azurove_thumb.jpg" width="180" height="180" alt="azurové"  border="0" /></a>
+</div>
+
+<div class="panel">
+<a href="images/barevny_cas.jpg"  rel="ohoopee"  class='slideshow' title="Barevný čas." ><img src="thumb/thumb_2/barevny_cas_thumb.jpg" alt="azurové"  border="0"  /></a>
+</div>
+
+<div class="panel">
+<img src="thumb/thumb_2/bludiste_thumb.jpg" />
+</div>
+
+<div class="panel">
+<img src="thumb/thumb_2/detsky_sen.png" />
+</div>
+
+<div class="panel">
+<img src="thumb/thumb_2/ester.jpg" />
+</div>
+<div class="panel">
+<img src="thumb/thumb_2/hra_barev_thumb.jpg" />
+</div>
+<div class="panel">
+<img src="thumb/thumb_2/isis_thumb.jpg" />
+</div>
+<div class="panel">
+<img src="thumb/thumb_2/jursky_thumb.jpg" />
+</div>
+
+<div class="panel">
+<img src="thumb/thumb_2/kralovsky_pergamen_thumb.jpg" />
+</div>
+
+
+<div class="panel">
+<img src="thumb/thumb_2/labyrint_azur_thumb.jpg" />
+</div>
+
+
+<div class="panel">
+<img src="thumb/thumb_2/ledovy_vjejir_thumb.jpg" />
+</div>
+
+<div class="panel">
+<img src="thumb/thumb_2/leto_thumb.jpg" />
+</div>
+
+
+</div>
+</div>
+
+
+</center>
+</body>
+</html>
