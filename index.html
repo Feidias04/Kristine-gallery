@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <style type="text/css" >
+            body{margin-top:0px;
+            padding-top:0px;
+            background: url("back3.jpg") repeat-y  #ffc;
+            background-position:center;
+            }
+           
+            #oddil_1{
+              z-index:102;
+              border: 0px;
+              margin-top:0px;
+              margin-left:-350px;
+              
+              margin-bottom:0px;
+              padding-top:0px;
+              background-color:red;
+              background: url(pozadi/background_images/images/pozadi_zahlavi_02.png) no-repeat;
+              width:700px;
+              height:130px;
+              position:relative;
+              left:50%;
+              background-position: top center;
+            }
+            
+            #oddil_11{
+              z-index:1;
+              margin-top:-1px;
+              margin-left:-350px;
+              margin-bottom:0px;
+              background-color:#0FF;
+              background: url(pozadi/background_images/images/pozadi_zahlavi_04.png) no-repeat;
+              width:700px;
+              height:116px;
+              position:absolute;
+              left:50%;
+              background-position: top center;
+              border: 0px;
+                }
+                
+          #oddil_2{
+              z-index:3;
+              border:2px groove  #6FC;
+              left:50%;
+              width:618px;
+              height: 380px;
+              margin-top:30px;
+              margin-left:-332px;
+              margin-bottom:20px;
+              padding-top:30px;
+              padding-left:27px;
+              padding-bottom: 40px;
+              padding-right:19px;
+              position:relative;
+              overflow:auto;
+              text-indent:1em;
+              background-image: url(okraj/images/ram_01.png) no-repeat;	
+              /*background-position:center;*/
+            }
+            
+            ul{list-style-type:none;
+            position:absolute;
+            margin-bottom:10px;
+            margin-top:160px;
+            }
+            li{cursor : pointer;}
+            #odd{
+               z-index:100;
+             position:relative;
+             margin-top:0px;
+             margin-left:-160px;
+             width:150px;
+             height:50px;
+             overflow:visible;
+             }
+          #oddil_3{
+              border:0px solid red;
+              z-index:1;
+             /*clip:rect(auto, auto, auto, auto);*/
+             margin-top:-55px;
+              margin-left:-1px;
+             overflow:visible;
+            
+             width:620px;
+             height:609px;
+              
+             margin-bottom:0px;
+             }
+           /*#iframe_{background:#99CC33;
+           position:absolute;
+           visibility:hidden;
+          z-index:2;
+             overflow:auto;
+             border:10px;
+             border-color:#F00;
+             margin-top:0px;
+             margin-left:0px;
+             margin-bottom: 50px;
+             height:614px;
+             width:650px;
+             left:50%;
+             margin-left:-325px;
+             top:130px; 
+             
+             filter:alpha(opacity=50);
+            -moz-opacity:0.5;
+              -khtml-opacity: 0.5;
+              opacity: 0.5;
+             }
+             
+               #iframe_{
+                     overflow:visible;
+                      width:644px;
+                      border:2px;
+                      border-color:magenta;
+                      clip:rect(auto, auto, auto, auto);
+                     }*/
+                     
+             #oddil_dole{
+                 position:absolute;
+                 
+                 background:#FF0;
+                 width:644px;
+                 height:100px;
+                 left:50%;
+                 margin-left:-322px;
+                 border:2px;
+                 border-color:magenta;
+                 }
+            .bot {
+              padding: 30px;
+          }
+            </style>
+        <script type="text/javascript" src="colorbox/jquery.min.js"></script>
+  
+        <script language="javascript" type="text/javascript">
+
+ var x = 1
+ var y = 0
+
+function aa(){
+
+  x++
+  if(x>80){y=1
+    x=0
+    hraj();  
+}
+  let WIDTH = document.getElementById("platno").width;
+    let HEIGHT = document.getElementById("platno").height;
+
+  this.width = WIDTH;
+    this.height = HEIGHT;
+
+    var c=document.getElementById("platno")
+    var car=c.getContext("2d");
+car.clearRect(0,0,WIDTH,HEIGHT);
+
+var c=document.getElementById("platno");
+var car=c.getContext("2d");
+car.font=" "+ x/2 +"px Arial";
+car.fillText(x,x,(x/2));
+car.fillText(y,170-x,(x/2));
+
+}
+
+function test_05(){setInterval (aa, 100);}
+
+function ca(){
+    x=0
+}
+
+function prejdi()
+{
+window.open("galerie/galerie_03.html","_blank","directories=no, fullscreen=yes, location=no, menubar=no," + "scrollbars=no, status=no", );
+}
+
+function hraj(){
+	const audio = document.getElementById('myAudio');  
+	  //function togglePlay() {  
+		  audio.play();  
+		//} 
+		//return togglePlay() 
+
+	  } 
+
+
+/* Get the documentElement (<html>) to display the page in fullscreen */
+    var elem = document.activeElement;
+    
+
+/* View in fullscreen */
+function openFullscreen() {
+  window.open("galerie/galerie_03.html","_blank","directories=no, fullscreen=yes, location=no, menubar=no," + "scrollbars=no, status=no", );
+
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+
+
+    </script>
+
+        </head>
+        <body onload="test_05(); hraj()">
+            <audio id="myAudio" style="content-visibility:visible;" controls autoplay loop>
+                <source  src="galerie/rose_for_web_02.mp3" type="audio/mpeg" >
+                Your browser does not support the audio element.
+              </audio>
+            <canvas id="platno" width="200" height="50" style="border:3px solid red"></canvas>
+         <br>
+        <button type="button" onclick="ca(); openFullscreen(); prejdi(); hraj();" id="tlacitko">click</button>
+        </body>
+
+</html>
